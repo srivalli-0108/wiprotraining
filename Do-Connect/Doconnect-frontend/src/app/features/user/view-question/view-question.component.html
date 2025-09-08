@@ -1,0 +1,31 @@
+<div class="question-details">
+  <h2>{{ question?.title }}</h2>
+  <p>{{ question?.description }}</p>
+</div>
+
+<div class="answers-section" *ngIf="answers?.length; else noAnswers">
+  <h3>Answers</h3>
+  <div *ngFor="let answer of answers" class="answer-card">
+    <p><strong>{{ answer.userName }}:</strong> {{ answer.text }}</p>
+    <p><small>Posted on {{ answer.date | date: 'short' }}</small></p>
+  </div>
+</div>
+
+<ng-template #noAnswers>
+  <p>No answers yet. Be the first to answer!</p>
+</ng-template>
+
+<div class="answer-form">
+  <form [formGroup]="answerForm" (ngSubmit)="submitAnswer()">
+    <label>Your Answer:</label>
+    <textarea formControlName="answerText" rows="4"></textarea>
+    <div *ngIf="answerForm.get('answerText')?.invalid && answerForm.get('answerText')?.touched" class="error">
+      Answer text is required.
+    </div>
+
+    <label>Attach Image (optional):</label>
+    <input type="file" (change)="onFileChange($event)" />
+
+    <button type="submit" [disabled]="answerForm.invalid">Submit Answer</button>
+  </form>
+</div>

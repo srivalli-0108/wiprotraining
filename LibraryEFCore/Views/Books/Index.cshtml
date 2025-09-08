@@ -1,0 +1,47 @@
+@model IEnumerable<LibraryEFCore.Models.DbFirst.Book>
+
+@{
+    ViewData["Title"] = "Books";
+}
+
+<h2>Books</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Genres</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var book in Model)
+{
+    <tr>
+        <td>@book.Title</td>
+        <td>@book.Author?.Name</td>
+        <td>
+            @if (book.BookGenres != null && book.BookGenres.Any())
+            {
+                foreach (var bg in book.BookGenres)
+                {
+                    <span class="badge bg-secondary">@bg.Genre?.Name</span> 
+                }
+            }
+            else
+            {
+                <span class="text-muted">No genres</span>
+            }
+        </td>
+        <td>
+            <a asp-action="Edit" asp-route-id="@book.BookId" class="btn btn-sm btn-warning">Edit</a>
+            <a asp-action="Details" asp-route-id="@book.BookId" class="btn btn-sm btn-info">Details</a>
+            <a asp-action="Delete" asp-route-id="@book.BookId" class="btn btn-sm btn-danger">Delete</a>
+        </td>
+    </tr>
+}
+    </tbody>
+</table>
+
+<a asp-action="Create" class="btn btn-primary">Add New Book</a>

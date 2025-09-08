@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SecureAuthAPI Test Page</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 20px auto; }
+        input, button { padding: 8px; margin: 5px 0; width: 100%; }
+        pre { background: #f4f4f4; padding: 10px; overflow-x: auto; }
+        .response { margin-top: 15px; padding: 10px; background: #e2e2e2; white-space: pre-wrap; }
+    </style>
+</head>
+<body>
+
+    <h1>SecureAuthAPI Test Page</h1>
+
+    <h2>Login with Username/Password</h2>
+    <input type="text" id="username" placeholder="Username" />
+    <input type="password" id="password" placeholder="Password" />
+    <button onclick="login()">Login</button>
+
+    <h2>Login with OAuth (Google)</h2>
+    <input type="text" id="oauthToken" placeholder="OAuth Access Token" />
+    <button onclick="oauthLogin()">OAuth Login</button>
+
+    <h2>Access Secure Data</h2>
+    <button onclick="getSecureData()">Get Secure Data</button>
+
+    <h2>Access Admin Dashboard</h2>
+    <button onclick="getAdminDashboard()">Get Admin Dashboard</button>
+
+    <h2>Response</h2>
+    <pre id="responseOutput">No response yet.</pre>
+
+    <script>
+        let jwtToken = null;
+
+        function displayResponse(data) {
+            document.getElementById('responseOutput').textContent = JSON.stringify(data, null, 2);
+        }
+
+        async function login() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (!username || !password) {
+                alert("Please enter username and password");
+                return;
+            }
+
+            try {
+                const res = await fetch('/api/auth/login', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ username, password })
+                });
+                const data = await res.json();
+                if (res.ok) {
+                    jwtToken = data.token;
+                    displayResponse(data);
+                } else {
+                    displayResponse(data);
+                }
+            } catch (err) {
+                displayResponse({ error: err.message });
+            }
+        }
+
+        async function oauthLogin() {
+            const token = document.getElementById('oauthToken').value;
+
+            if (!token) {
+                alert("Please enter OAuth token");
+                return;
+            }
+
+            try {
+                const res = await fetch('/api/auth/oauth', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ provider: 'google', token })
+                });
+                const data = await res.json();
+                if (res.ok) {
+                    jwtToken = data.token;
+                    displayResponse(data);
+                } else {
+                    displayResponse(data);
+                }
+            } catch (err) {
+                displayResponse({ error: err.message });
+            }
+        }
+
+        async function getSecureData() {
+            if (!jwtToken) {
+                alert("You need to login first!");
+                return;
+            }
+
+            try {
+                const res = await fetch('/api/secure-data', {
+                    method: 'GET',
+                    headers: { 'Authorization': 'Bearer ' + jwtToken }
+                });
+                const data = await res.json();
+                displayResponse(data);
+            } catch (err) {
+                displayResponse({ error: err.message });
+            }
+        }
+
+        async function getAdminDashboard() {
+            if (!jwtToken) {
+                alert("You need to login first!");
+                return;
+            }
+
+            try {
+                const res = await fetch('/api/admin/dashboard', {
+                    method: 'GET',
+                    headers: { 'Authorization': 'Bearer ' + jwtToken }
+                });
+                const data = await res.json();
+                displayResponse(data);
+            } catch (err) {
+                displayResponse({ error: err.message });
+            }
+        }
+    </script>
+
+</body>
+</html>

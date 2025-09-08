@@ -1,0 +1,8 @@
+@model RazorPagesAdvanced.Models.Product
+
+<div style="border:1px solid #ccc; margin-bottom:10px; padding:10px;">
+    <h4>@Model.Name</h4>
+    <p>@Model.Description</p>
+    <p><strong>Categories:</strong> @string.Join(", ", Model.Categories.Select(c => c.Name))</p>
+    <a href="/Products/@Model.ProductID">View Details</a>
+</div>

@@ -1,0 +1,23 @@
+<h2>Product Dashboard</h2>
+
+<ul>
+  <li *ngFor="let product of products">
+    {{ product.name }} - ₹{{ product.price }}
+    <button (click)="selectProduct(product)">View Details</button>
+  </li>
+</ul>
+
+<hr />
+
+<app-product-details
+  *ngIf="selectedProduct"
+  [product]="selectedProduct"
+  (feedbackEvent)="receiveFeedback($event)"
+></app-product-details>
+
+<h3>Feedback Received:</h3>
+<ul>
+  <li *ngFor="let fb of feedbackList">
+    Product ID {{ fb.productId }}: {{ fb.feedback }}
+  </li>
+</ul>

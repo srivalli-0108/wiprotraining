@@ -1,0 +1,18 @@
+@page
+@model RazorPagesAdvanced.Pages.Products.CreateModel
+@{
+    ViewData["Title"] = "Add Product";
+}
+
+<h2>Add Product</h2>
+
+<form method="post">
+    <input asp-for="Product.ProductID" placeholder="Product ID" /><br />
+    <input asp-for="Product.Name" placeholder="Name" /><br />
+    <textarea asp-for="Product.Description" placeholder="Description"></textarea><br />
+
+    <label>Categories (comma separated):</label>
+    <input name="CategoryNames" placeholder="Electronics, Books" /><br />
+
+    <button type="submit">Save</button>
+</form>

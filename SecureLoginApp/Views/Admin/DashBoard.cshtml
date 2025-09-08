@@ -1,0 +1,15 @@
+@using Microsoft.AspNetCore.Identity
+@model IEnumerable<IdentityUser>
+<h2>Admin Dashboard</h2>
+<p>Welcome, Admin! You have access to the Admin Dashboard.</p>
+<table>
+    <thead>
+        <tr><th>Username</th><th>Email</th></tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr><td>@user.UserName</td><td>@user.Email</td></tr>
+        }
+    </tbody>
+</table>

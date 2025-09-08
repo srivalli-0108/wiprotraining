@@ -1,0 +1,17 @@
+{
+  "name": "book-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "start": "node server.js"
+},
+  "keywords": [],
+  "title": "1984",
+  "author": "George Orwell"
+}
+
+
+
+  
+

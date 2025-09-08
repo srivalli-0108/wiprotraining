@@ -12,3 +12,4 @@ C:\Users\Surya kumar\OneDrive\Documents\wiprotraining\day2\obj\Debug\net9.0\refi
 C:\Users\Surya kumar\OneDrive\Documents\wiprotraining\day2\obj\Debug\net9.0\day2.pdb
 C:\Users\Surya kumar\OneDrive\Documents\wiprotraining\day2\obj\Debug\net9.0\day2.genruntimeconfig.cache
 C:\Users\Surya kumar\OneDrive\Documents\wiprotraining\day2\obj\Debug\net9.0\ref\day2.dll
+C:\Users\Surya kumar\OneDrive\Documents\wiprotraining\day2\obj\Debug\net9.0\day2.sourcelink.json

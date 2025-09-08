@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "RazorPagesAdvanced/1.0.0": {
+        "runtime": {
+          "RazorPagesAdvanced.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "RazorPagesAdvanced/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

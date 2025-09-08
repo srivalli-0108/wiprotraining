@@ -1,0 +1,73 @@
+<div class="admin-dashboard-container">
+  <h1>Admin Dashboard</h1>
+
+  <!-- Notifications Panel -->
+  <section class="notifications">
+    <h2>Notifications</h2>
+    <ul>
+      <li *ngFor="let notification of notifications">
+        {{ notification.message }} - <small>{{ notification.date | date:'short' }}</small>
+      </li>
+    </ul>
+    <ng-template #noNotifications>
+    <p>No notifications at the moment.</p>
+  </ng-template>
+  </section>
+
+  <!-- Pending Approvals -->
+  <section class="pending-approvals">
+    <h2>Pending Approvals</h2>
+
+    <h3>Questions</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Question Title</th>
+          <th>Asked By</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let question of pendingQuestions">
+          <td>{{ question.title }}</td>
+          <td>{{ question.userName }}</td>
+          <td>
+            <button (click)="approveQuestion(question.id)">Approve</button>
+            <button (click)="rejectQuestion(question.id)">Reject</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Answers</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Answer Excerpt</th>
+          <th>Question</th>
+          <th>Answered By</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let answer of pendingAnswers">
+          <td>{{ answer.text | slice:0:50 }}{{ answer.text.length > 50 ? '...' : '' }}</td>
+          <td>{{ answer.questionTitle }}</td>
+          <td>{{ answer.userName }}</td>
+          <td>
+            <button (click)="approveAnswer(answer.id)">Approve</button>
+            <button (click)="rejectAnswer(answer.id)">Reject</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Moderation -->
+  <section class="moderation">
+    <h2>Moderate Content</h2>
+    <p>Manage inappropriate questions and answers here.</p>
+
+    <!-- You can add lists or search to delete inappropriate content -->
+  </section>
+</div>

@@ -1,0 +1,70 @@
+/* Basic navbar shadow and padding */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 1rem;
+  background-color: #ffffff;
+}
+
+/* Brand/logo styling */
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Nav links styling */
+.nav-link {
+  color: #333333;
+  font-weight: 500;
+  margin-left: 1rem;
+  transition: color 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Hover effect for nav links */
+.nav-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Active nav link highlighting */
+.nav-link.active {
+  font-weight: 700;
+  color: #007bff !important;
+}
+
+/* Responsive toggler button styling */
+.navbar-toggler {
+  border: none;
+}
+
+/* Optional: add focus style for accessibility */
+.nav-link:focus,
+.navbar-brand:focus,
+.navbar-toggler:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  margin-right: 20px; /* Adjust the value as needed */
+}
+
+nav a:last-child {
+  margin-right: 0; /* Remove margin from the last link */
+}
+.navbar-nav .nav-item {
+  margin-left: 15px; /* Adjust the value as needed */
+}
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}

@@ -1,0 +1,12 @@
+@{
+    ViewData["Title"] = "Product List";
+    var products = ViewBag.Products as List<string>;
+}
+
+<h2>Product List</h2>
+<ul>
+@foreach (var product in products)
+{
+    <li>@product</li>
+}
+</ul>

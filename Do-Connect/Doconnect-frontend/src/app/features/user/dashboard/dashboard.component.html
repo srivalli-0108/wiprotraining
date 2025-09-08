@@ -1,0 +1,10 @@
+
+<div class="dashboard-container">
+  <h1>Dashboard</h1>
+  <ul>
+  <li *ngFor="let question of questions">
+    <a [routerLink]="['/view-question', question.id]">{{ question.title }}</a> - {{ question.status }}
+  </li>
+</ul>
+
+</div>

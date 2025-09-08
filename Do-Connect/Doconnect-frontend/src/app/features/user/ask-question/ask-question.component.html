@@ -1,0 +1,20 @@
+<!-- src/app/user/ask-question/ask-question.component.html -->
+
+<form [formGroup]="askForm" (ngSubmit)="submitQuestion()">
+  <div>
+    <label>Title</label>
+    <input formControlName="title" placeholder="Enter question title" />
+  </div>
+
+  <div>
+    <label>Description</label>
+    <textarea formControlName="description" placeholder="Describe your question"></textarea>
+  </div>
+
+  <div>
+    <label>Upload Image (optional)</label>
+    <input type="file" (change)="onFileChange($event)" />
+  </div>
+
+  <button type="submit" [disabled]="askForm.invalid">Ask Question</button>
+</form>

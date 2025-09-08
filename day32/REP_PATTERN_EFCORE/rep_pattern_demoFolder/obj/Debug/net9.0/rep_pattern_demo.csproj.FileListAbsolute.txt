@@ -1,0 +1,10 @@
+C:\Users\Surya kumar\OneDrive\Documents\wiprotraining\day32\REP_PATTERN_EFCORE\rep_pattern_demoFolder\obj\Debug\net9.0\rep_pattern_demo.csproj.AssemblyReference.cache
+C:\Users\Surya kumar\OneDrive\Documents\wiprotraining\day32\REP_PATTERN_EFCORE\rep_pattern_demoFolder\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\Surya kumar\OneDrive\Documents\wiprotraining\day32\REP_PATTERN_EFCORE\rep_pattern_demoFolder\obj\Debug\net9.0\rep_pattern_demo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Surya kumar\OneDrive\Documents\wiprotraining\day32\REP_PATTERN_EFCORE\rep_pattern_demoFolder\obj\Debug\net9.0\rep_pattern_demo.AssemblyInfoInputs.cache
+C:\Users\Surya kumar\OneDrive\Documents\wiprotraining\day32\REP_PATTERN_EFCORE\rep_pattern_demoFolder\obj\Debug\net9.0\rep_pattern_demo.AssemblyInfo.cs
+C:\Users\Surya kumar\OneDrive\Documents\wiprotraining\day32\REP_PATTERN_EFCORE\rep_pattern_demoFolder\obj\Debug\net9.0\rep_pattern_demo.csproj.CoreCompileInputs.cache
+C:\Users\Surya kumar\OneDrive\Documents\wiprotraining\day32\REP_PATTERN_EFCORE\rep_pattern_demoFolder\obj\Debug\net9.0\rep_pattern_demo.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Surya kumar\OneDrive\Documents\wiprotraining\day32\REP_PATTERN_EFCORE\rep_pattern_demoFolder\obj\Debug\net9.0\rep_pattern_demo.RazorAssemblyInfo.cache
+C:\Users\Surya kumar\OneDrive\Documents\wiprotraining\day32\REP_PATTERN_EFCORE\rep_pattern_demoFolder\obj\Debug\net9.0\rep_pattern_demo.RazorAssemblyInfo.cs
+C:\Users\Surya kumar\OneDrive\Documents\wiprotraining\day32\REP_PATTERN_EFCORE\rep_pattern_demoFolder\obj\Debug\net9.0\rep_pattern_demo.sourcelink.json

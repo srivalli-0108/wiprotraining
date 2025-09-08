@@ -1,0 +1,10 @@
+C:\Users\Surya kumar\OneDrive\Documents\wiprotraining\day32\REP_PATTERN_EFCORE\mvccore_ajax_demo\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\Surya kumar\OneDrive\Documents\wiprotraining\day32\REP_PATTERN_EFCORE\mvccore_ajax_demo\obj\Debug\net9.0\mvccore_ajax_demo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Surya kumar\OneDrive\Documents\wiprotraining\day32\REP_PATTERN_EFCORE\mvccore_ajax_demo\obj\Debug\net9.0\mvccore_ajax_demo.AssemblyInfoInputs.cache
+C:\Users\Surya kumar\OneDrive\Documents\wiprotraining\day32\REP_PATTERN_EFCORE\mvccore_ajax_demo\obj\Debug\net9.0\mvccore_ajax_demo.AssemblyInfo.cs
+C:\Users\Surya kumar\OneDrive\Documents\wiprotraining\day32\REP_PATTERN_EFCORE\mvccore_ajax_demo\obj\Debug\net9.0\mvccore_ajax_demo.csproj.CoreCompileInputs.cache
+C:\Users\Surya kumar\OneDrive\Documents\wiprotraining\day32\REP_PATTERN_EFCORE\mvccore_ajax_demo\obj\Debug\net9.0\mvccore_ajax_demo.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Surya kumar\OneDrive\Documents\wiprotraining\day32\REP_PATTERN_EFCORE\mvccore_ajax_demo\obj\Debug\net9.0\mvccore_ajax_demo.RazorAssemblyInfo.cache
+C:\Users\Surya kumar\OneDrive\Documents\wiprotraining\day32\REP_PATTERN_EFCORE\mvccore_ajax_demo\obj\Debug\net9.0\mvccore_ajax_demo.RazorAssemblyInfo.cs
+C:\Users\Surya kumar\OneDrive\Documents\wiprotraining\day32\REP_PATTERN_EFCORE\mvccore_ajax_demo\obj\Debug\net9.0\mvccore_ajax_demo.sourcelink.json
+C:\Users\Surya kumar\OneDrive\Documents\wiprotraining\day32\REP_PATTERN_EFCORE\mvccore_ajax_demo\obj\Debug\net9.0\mvccore_ajax_demo.csproj.AssemblyReference.cache

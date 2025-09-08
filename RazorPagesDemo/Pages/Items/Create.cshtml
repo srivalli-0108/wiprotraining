@@ -1,0 +1,18 @@
+@page
+@model RazorPagesDemo.Pages.Items.CreateModel
+@{
+    ViewData["Title"] = "Create Item";
+}
+
+<h2>Add New Item</h2>
+
+<form method="post">
+    <div>
+        <label>Name:</label>
+        <input asp-for="NewItem.Name" />
+        <span asp-validation-for="NewItem.Name"></span>
+    </div>
+    <button type="submit">Add Item</button>
+</form>
+
+<a href="/Items/Index">Back to List</a>

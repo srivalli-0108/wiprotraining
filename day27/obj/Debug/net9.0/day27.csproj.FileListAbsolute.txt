@@ -1,0 +1,15 @@
+C:\Users\Surya kumar\OneDrive\Documents\wiprotraining\day27\bin\Debug\net9.0\day27.exe
+C:\Users\Surya kumar\OneDrive\Documents\wiprotraining\day27\bin\Debug\net9.0\day27.deps.json
+C:\Users\Surya kumar\OneDrive\Documents\wiprotraining\day27\bin\Debug\net9.0\day27.runtimeconfig.json
+C:\Users\Surya kumar\OneDrive\Documents\wiprotraining\day27\bin\Debug\net9.0\day27.dll
+C:\Users\Surya kumar\OneDrive\Documents\wiprotraining\day27\bin\Debug\net9.0\day27.pdb
+C:\Users\Surya kumar\OneDrive\Documents\wiprotraining\day27\obj\Debug\net9.0\day27.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Surya kumar\OneDrive\Documents\wiprotraining\day27\obj\Debug\net9.0\day27.AssemblyInfoInputs.cache
+C:\Users\Surya kumar\OneDrive\Documents\wiprotraining\day27\obj\Debug\net9.0\day27.AssemblyInfo.cs
+C:\Users\Surya kumar\OneDrive\Documents\wiprotraining\day27\obj\Debug\net9.0\day27.csproj.CoreCompileInputs.cache
+C:\Users\Surya kumar\OneDrive\Documents\wiprotraining\day27\obj\Debug\net9.0\day27.sourcelink.json
+C:\Users\Surya kumar\OneDrive\Documents\wiprotraining\day27\obj\Debug\net9.0\day27.dll
+C:\Users\Surya kumar\OneDrive\Documents\wiprotraining\day27\obj\Debug\net9.0\refint\day27.dll
+C:\Users\Surya kumar\OneDrive\Documents\wiprotraining\day27\obj\Debug\net9.0\day27.pdb
+C:\Users\Surya kumar\OneDrive\Documents\wiprotraining\day27\obj\Debug\net9.0\day27.genruntimeconfig.cache
+C:\Users\Surya kumar\OneDrive\Documents\wiprotraining\day27\obj\Debug\net9.0\ref\day27.dll

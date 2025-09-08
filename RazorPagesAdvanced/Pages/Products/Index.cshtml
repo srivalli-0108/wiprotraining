@@ -1,0 +1,14 @@
+@page
+@model RazorPagesAdvanced.Pages.Products.IndexModel
+@{
+    ViewData["Title"] = "Product List";
+}
+
+<h2>Product List</h2>
+
+@foreach (var product in Model.ProductList)
+{
+    <partial name="_ProductSummary" model="product" />
+}
+
+<a href="/Products/Create">Add Product</a>

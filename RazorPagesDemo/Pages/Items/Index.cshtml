@@ -1,0 +1,23 @@
+@page
+@model RazorPagesDemo.Pages.Items.IndexModel
+@{
+    ViewData["Title"] = "Item List";
+}
+
+<h2>Items</h2>
+
+@if (!IndexModel.Items.Any())
+{
+    <p>No items found.</p>
+}
+else
+{
+    <ul>
+        @foreach (var item in RazorPagesDemo.Pages.Items.IndexModel.Items)
+        {
+            <li>@item.Name</li>
+        }
+    </ul>
+}
+
+<a href="/Items/Create">Add New Item</a>
